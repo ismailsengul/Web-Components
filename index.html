@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Component</title>
+  </head>
+  <body>    
+    <table-component id="table-component" cols="" rows=""></table-component>
+
+    <script>
+      let cols = ["Company","Contact","Country"];
+      let row1 = ["Microsoft", "Bill Gates", "USA"];
+      let row2 = ["SpaceX", "Elon Musk","USA"];
+      let row3 = ["Amazon", "Jeff Bezos", "USA"];
+      let row4 = ["Alibaba","Daniel Zhang","China"]
+      let row5 = ["Trendyol","Demet Mutlu","Turkey"];
+      let rows = [];
+      rows.push(row1);
+      rows.push(row2);
+      rows.push(row3);
+      rows.push(row4);
+      rows.push(row5);
+
+      let tableComponent = document.getElementById("table-component");
+      tableComponent.setAttribute('cols',JSON.stringify(cols))
+      tableComponent.setAttribute('rows',JSON.stringify(rows))
+
+    </script>
+
+<script src="table-component.js"></script>
+
+  </body>
+</html>
